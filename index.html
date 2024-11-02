@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neurodivergent ChatGPT</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+        header { background: blue; color: black; padding: 10px; text-align: center; }
+        nav { margin: 20px 0; }
+        nav a { margin: 0 15px; text-decoration: none; color: skyblue; }
+        section { margin: 20px 0; }
+        footer { text-align: center; margin-top: 20px; }
+        form { margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Social Group for Neurodivergent Individuals</h1>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#signup">Sign Up/Login</a>
+    <a href="#logout" id="logout-link" style="display:none;">Logout</a>
+    <a href="#rsvp">RSVP</a>
+    <a href="#newsletter">Newsletter</a>
+    <a href="#news">News</a>
+</nav>
+
+<section id="about">
+    <h2>About the Group</h2>
+    <p>This is a social group for neurodivergent individuals to connect, share experiences, and support each other.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@neurodivergentgroup.org</p>
+</section>
+
+<section id="signup">
+    <h2>Sign Up/Login</h2>
+    <form id="login-form">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+</section>
+
+<section id="rsvp">
+    <h2>RSVP for Events</h2>
+    <p>Details about upcoming events will be posted here.</p>
+</section>
+
+<section id="newsletter">
+    <h2>Newsletter Subscription</h2>
+    <form id="newsletter-form">
+        <input type="email" id="email" placeholder="Your Email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
+
+<section id="news">
+    <h2>News</h2>
+    <p>Stay tuned for the latest updates and events!</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Social Group for Neurodivergent Individuals</p>
+</footer>
+
+<script>
+    const loginForm = document.getElementById('login-form');
+    const logoutLink = document.getElementById('logout-link');
+
+    loginForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        // Simulate login (in a real app, you would validate against a database)
+        alert('Logged in as ' + document.getElementById('username').value);
+        logoutLink.style.display = 'inline'; // Show logout link
+        loginForm.reset(); // Reset form
+    });
+
+    logoutLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        alert('Logged out');
+        logoutLink.style.display = 'none'; // Hide logout link
+    });
+
+</script>
+<img srcset="processed-910E20E2-30AD-45D3-B4C1-6CBA16901815.jpeg" alt="Me throwing axes" width="300" height="200"></img>
+
+</body>
+</html>
+
